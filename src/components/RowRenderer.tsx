@@ -1,14 +1,9 @@
-import React, { CSSProperties, FC } from 'react';
+import React, { FC } from 'react';
 
+import { ListRowProps } from 'react-virtualized/dist/es/List';
 import numbers from '../mocks/numbers'
 
-type Props = {
-  key: string;
-  index: number;
-  style: CSSProperties;
-}
-
-const RowRenderer: FC<Props> = ({
+const RowRenderer: FC<ListRowProps> = ({
   key,
   index,
   style,
